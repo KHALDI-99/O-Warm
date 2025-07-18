@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Warm - Restaurant Gastronomique Marseille</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Animation CSS -->
+<link rel="stylesheet"  href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <video class="video-bg" autoplay muted loop>
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-restaurant-tasting-menu-3152-large.mp4" type="video/mp4">
+        </video>
+
+        <nav>
+            <div class="logo">
+                <img src="logo-menu-transparent.png" alt="O Warm Logo" class="logo-img">
+            </div>
+
+            <!-- Ajoutez ce bouton dans le header après .logo -->
+<button class="mobile-menu-btn">
+    <i class="fas fa-bars"></i>
+</button>
+
+            <ul class="nav-links">
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Galerie</a></li>
+                <li><a href="#reservation">Réservation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-content">
+            <h1>L'art culinaire réinventé</h1>
+            <p>Découvrez une expérience gastronomique unique au cœur de Marseille, où tradition et innovation se rencontrent pour éveiller vos sens.</p>
+            <div class="hero-btns">
+                <a href="#reservation" class="btn btn-primary">Réserver une table</a>
+                <a href="#menu" class="btn btn-secondary">Voir le menu</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Chef O Warm">
+        </div>
+        <div class="about-content">
+            <span class="section-subtitle">Notre histoire</span>
+            <h2 class="section-title">Bienvenue chez O Warm</h2>
+            <p>Fondé en 2015 par le chef étoilé Julien Marchand, O Warm est bien plus qu'un restaurant - c'est une expérience sensorielle qui célèbre les produits méditerranéens avec une touche contemporaine.</p>
+            <p>Notre philosophie repose sur trois piliers fondamentaux : l'authenticité des produits locaux, l'audace des associations et le respect des traditions culinaires provençales.</p>
+            <p>Chaque plat qui sort de notre cuisine raconte une histoire, celle d'une région généreuse et d'une équipe passionnée qui met tout son cœur à vous offrir des moments inoubliables.</p>
+            <div class="signature">Julien Marchand</div>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="menu" id="menu">
+        <div class="menu-header">
+            <span class="section-subtitle">Nos créations</span>
+            <h2 class="section-title">Découvrez notre menu</h2>
+            <p>Une sélection de plats signature qui évoluent au rythme des saisons et des inspirations de notre chef.</p>
+        </div>
+
+        <div class="menu-tabs">
+            <button class="tab-btn active" data-tab="entrees">Entrées</button>
+            <button class="tab-btn" data-tab="plats">Plats principaux</button>
+            <button class="tab-btn" data-tab="desserts">Desserts</button>
+            <button class="tab-btn" data-tab="vins">Carte des vins</button>
+        </div>
+
+        <div class="menu-grid" id="entrees-tab">
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <h3 class="menu-item-title">Tartare de thon rouge</h3>
+                    <div class="menu-item-price">24€</div>
+                </div>
+                <p class="menu-item-desc">Thon rouge de Méditerranée, avocat, mangue, wasabi et chips de sésame</p>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <h3 class="menu-item-title">Foie gras maison</h3>
+                    <div class="menu-item-price">28€</div>
+                </div>
+                <p class="menu-item-desc">Mi-cuit, chutney de figues, pain d'épices toasté et gelée de Sauternes</p>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <h3 class="menu-item-title">Velouté de potimarron</h3>
+                    <div class="menu-item-price">18€</div>
+                </div>
+                <p class="menu-item-desc">Crème de noisettes, huile d'olive de la vallée des Baux et copeaux de parmesan</p>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <h3 class="menu-item-title">Carpaccio de Saint-Jacques</h3>
+                    <div class="menu-item-price">32€</div>
+                </div>
+                <p class="menu-item-desc">Noix de Saint-Jacques fraîches, vinaigrette passion-citron vert et fines lamelles de radis</p>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <h3 class="menu-item-title">Salade O Warm</h3>
+                    <div class="menu-item-price">22€</div>
+                </div>
+                <p class="menu-item-desc">Mélange de jeunes pousses, pignons torréfiés, chèvre frais, tomates confites et vinaigrette au miel</p>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <h3 class="menu-item-title">Assiette de charcuterie</h3>
+                    <div class="menu-item-price">26€</div>
+                </div>
+                <p class="menu-item-desc">Sélection de produits artisanaux des Alpilles, cornichons maison et pain de campagne</p>
+            </div>
+        </div>
+
+        <div class="menu-grid" id="plats-tab" style="display: none;">
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <h3 class="menu-item-title">Filet de boeuf Rossini</h3>
+                    <div class="menu-item-price">42€</div>
+                </div>
+                <p class="menu-item-desc">Angus noir, foie gras poêlé, truffe noire et pommes soufflées</p>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <h3 class="menu-item-title">Bar de ligne rôti</h3>
+                    <div class="menu-item-price">38€</div>
+                </div>
+                <p class="menu-item-desc">Coulis de tomates séchées, fondue de poireaux et émulsion au basilic</p>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <h3 class="menu-item-title">Risotto aux cèpes</h3>
+                    <div class="menu-item-price">32€</div>
+                </div>
+                <p class="menu-item-desc">Cèpes frais des Cévennes, parmesan 24 mois et jus de truffe</p>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <h3 class="menu-item-title">Carré d'agneau</h3>
+                    <div class="menu-item-price">45€</div>
+                </div>
+                <p class="menu-item-desc">Pré-salé de Sisteron, tian de légumes provençaux et réduction au romarin</p>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <h3 class="menu-item-title">Pigeonneau en deux services</h3>
+                    <div class="menu-item-price">48€</div>
+                </div>
+                <p class="menu-item-desc">Cuisses confites, suprême rôti, purée de topinambours et jus corsé</p>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <h3 class="menu-item-title">Plateau de fruits de mer</h3>
+                    <div class="menu-item-price">55€</div>
+                </div>
+                <p class="menu-item-desc">Selection du jour selon arrivage (huîtres, bulots, crevettes, tourteaux...)</p>
+            </div>
+        </div>
+
+        <div class="menu-grid" id="desserts-tab" style="display: none;">
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <h3 class="menu-item-title">Sphère chocolat</h3>
+                    <div class="menu-item-price">16€</div>
+                </div>
+                <p class="menu-item-desc">Coulis de framboises, croustillant praliné et glace vanille de Madagascar</p>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <h3 class="menu-item-title">Tarte fine aux pommes</h3>
+                    <div class="menu-item-price">14€</div>
+                </div>
+                <p class="menu-item-desc">Pommes golden, caramel au beurre salé et sorbet calvados</p>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <h3 class="menu-item-title">Soufflé grand marnier</h3>
+                    <div class="menu-item-price">18€</div>
+                </div>
+                <p class="menu-item-desc">Servi avec sa crème anglaise à la vanille et zestes d'orange confits</p>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <h3 class="menu-item-title">Assiette de fromages</h3>
+                    <div class="menu-item-price">22€</div>
+                </div>
+                <p class="menu-item-desc">Sélection affinée par notre maître fromager, accompagnée de confiture de figues</p>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <h3 class="menu-item-title">Millefeuille vanille</h3>
+                    <div class="menu-item-price">16€</div>
+                </div>
+                <p class="menu-item-desc">Pâte feuilletée croustillante, crème pâtissière à la vanille bourbon</p>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <h3 class="menu-item-title">Moelleux au chocolat</h3>
+                    <div class="menu-item-price">15€</div>
+                </div>
+                <p class="menu-item-desc">Cœur coulant, glace à la fleur de sel et tuile aux amandes</p>
+            </div>
+        </div>
+
+        <div class="menu-grid" id="vins-tab" style="display: none;">
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <h3 class="menu-item-title">Blanc - Château Simone</h3>
+                    <div class="menu-item-price">12€/verre</div>
+                </div>
+                <p class="menu-item-desc">Palette 2018 - Bouche ronde et complexe aux arômes de fruits blancs et d'épices douces</p>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <h3 class="menu-item-title">Rouge - Domaine Tempier</h3>
+                    <div class="menu-item-price">15€/verre</div>
+                </div>
+                <p class="menu-item-desc">Bandol 2016 - Puissant et élégant, aux notes de mûre, de réglisse et de garrigue</p>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <h3 class="menu-item-title">Rosé - Château d'Esclans</h3>
+                    <div class="menu-item-price">14€/verre</div>
+                </div>
+                <p class="menu-item-desc">Whispering Angel 2020 - Frais et délicat, parfait pour l'apéritif</p>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <h3 class="menu-item-title">Champagne - Krug</h3>
+                    <div class="menu-item-price">35€/verre</div>
+                </div>
+                <p class="menu-item-desc">Grande Cuvée - Complexité et richesse aromatique exceptionnelles</p>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <h3 class="menu-item-title">Doux - Château d'Yquem</h3>
+                    <div class="menu-item-price">25€/verre</div>
+                </div>
+                <p class="menu-item-desc">Sauternes 2015 - Or liquide aux arômes d'abricot, de miel et d'épices</p>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-header">
+                    <h3 class="menu-item-title">Digestif - Armagnac</h3>
+                    <div class="menu-item-price">18€/verre</div>
+                </div>
+                <p class="menu-item-desc">Darroze 25 ans d'âge - Rondeur et longueur en bouche exceptionnelles</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery" id="gallery">
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Plat O Warm">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Salle O Warm">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Bar O Warm">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Cuisine O Warm">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Dessert O Warm">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1565895405138-6c3a1555da6a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Vin O Warm">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <span class="section-subtitle">Témoignages</span>
+        <h2 class="section-title">Ce que disent nos clients</h2>
+
+        <div class="testimonial-slider">
+            <div class="testimonial-slide active">
+                <p class="testimonial-text">Une expérience culinaire exceptionnelle. Chaque plat était une découverte, un voyage des sens. Le service était impeccable et l'ambiance raffinée sans être guindée. Sans aucun doute le meilleur restaurant de Marseille.</p>
+                <div class="testimonial-author">
+                    <div class="author-img">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Sophie Martin">
+                    </div>
+                    <div class="author-info">
+                        <h4>Sophie Martin</h4>
+                        <p>Guide Michelin</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <p class="testimonial-text">Le chef Marchand est un véritable artiste. Son interprétation des produits locaux est tout simplement géniale. Le risotto aux cèpes et la sphère chocolat sont à tomber. Nous reviendrons certainement très vite !</p>
+                <div class="testimonial-author">
+                    <div class="author-img">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Thomas Leroy">
+                    </div>
+                    <div class="author-info">
+                        <h4>Thomas Leroy</h4>
+                        <p>Le Monde</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <p class="testimonial-text">Nous avons fêté nos 10 ans de mariage chez O Warm et tout était parfait. L'équipe a su créer une atmosphère magique avec une attention aux détails remarquable. Merci pour ce moment inoubliable.</p>
+                <div class="testimonial-author">
+                    <div class="author-img">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Émilie et Jean Dupont">
+                    </div>
+                    <div class="author-info">
+                        <h4>Émilie et Jean Dupont</h4>
+                        <p>Clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-controls">
+            <div class="slider-dot active" data-slide="0"></div>
+            <div class="slider-dot" data-slide="1"></div>
+            <div class="slider-dot" data-slide="2"></div>
+        </div>
+    </section>
+
+    <!-- Reservation -->
+    <section class="reservation" id="reservation">
+        <span class="section-subtitle">Réservez votre table</span>
+        <h2 class="section-title">Vivez l'expérience O Warm</h2>
+
+        <form class="reservation-form">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="name">Nom complet</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Téléphone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Heure</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Nombre de personnes</label>
+                    <select id="guests" name="guests" required>
+                        <option value="1">1 personne</option>
+                        <option value="2">2 personnes</option>
+                        <option value="3">3 personnes</option>
+                        <option value="4">4 personnes</option>
+                        <option value="5">5 personnes</option>
+                        <option value="6">6 personnes</option>
+                        <option value="7">7 personnes</option>
+                        <option value="8">8 personnes</option>
+                        <option value="9">9+ personnes</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="notes">Demandes spéciales</label>
+                <textarea id="notes" name="notes"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Confirmer la réservation</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>O Warm</h3>
+                <p>Restaurant gastronomique situé au cœur de Marseille, offrant une cuisine inventive et raffinée à base de produits locaux d'exception.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Horaires</h3>
+                <ul class="footer-links">
+                    <li>Lundi - Vendredi: 12h - 14h30 / 19h - 22h30</li>
+                    <li>Samedi: 19h - 23h</li>
+                    <li>Dimanche: Fermé</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <ul class="contact-info">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>12 Rue Sainte, 13001 Marseille</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>+33 4 91 23 45 67</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>contact@owarm-marseille.com</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>Abonnez-vous pour recevoir nos actualités et offres spéciales.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Votre email" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 O Warm Restaurant. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
